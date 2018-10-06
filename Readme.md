@@ -7,12 +7,18 @@ Whenever I train a Deep Learning modal it takes more than 3-4 hours and I don't 
 # How does it work:
 Using the login_address and password PyMail login in your email address and sends the mail to given sent_address. I know that typing password in visible form is very risky so I decided to use two methods for it which you can read in 'How to Use:' section.
 Following are the PyMail sections:
->1. login_address: E-mail address from you want to login [PyMail.pymail(login_address='YOUR_LOGIN_ADDRESS') or PyMail.pymail.set_login_address('YOUR_LOGIN_ADDRESS')]
->2. sent_address: E-mail address where you want to send mail [PyMail.pymail(sent_address='SENT_ADDRESS') or PyMail.pymail.set_sent_address('SENT_ADDRESS')] 
->3. Subject(Optional): Subject of your mail [PyMail.pymail(subject='YOUR_MAIL_SUBJECT') or PyMail.pymail.set_subject('YOUR_MAIL_SUBJECT')] 
->4. Body(Optional): Content of your mail [PyMail.pymail(body='YOUR_MAIL_BODY') or PyMail.pymail.set_body('YOUR_MAIL_BODY')] 
->5. File Attachment(Optional): Attach you file, You can attach multiple files separately [PyMail.pymail.attach_file('FILE_PATH')] 
->6. send Mail: send mail [PyMail.pymail.send_mail() if password is encrypted inside the file (method 1) or PyMail.pymail.send_mail('YOUR LOGIN PASSWORD') (method 2).
+>1. login_address: E-mail address from you want to login  
+[PyMail.pymail(login_address='YOUR_LOGIN_ADDRESS') or PyMail.pymail.set_login_address('YOUR_LOGIN_ADDRESS')]
+>2. sent_address: E-mail address where you want to send mail  
+[PyMail.pymail(sent_address='SENT_ADDRESS') or PyMail.pymail.set_sent_address('SENT_ADDRESS')] 
+>3. Subject(Optional): Subject of your mail  
+[PyMail.pymail(subject='YOUR_MAIL_SUBJECT') or PyMail.pymail.set_subject('YOUR_MAIL_SUBJECT')] 
+>4. Body(Optional): Content of your mail  
+[PyMail.pymail(body='YOUR_MAIL_BODY') or PyMail.pymail.set_body('YOUR_MAIL_BODY')] 
+>5. File Attachment(Optional): Attach you file, You can attach multiple files separately  
+[PyMail.pymail.attach_file('FILE_PATH')] 
+>6. send Mail: send mail  
+[PyMail.pymail.send_mail() if password is encrypted inside the file (method 1) or PyMail.pymail.send_mail('YOUR LOGIN PASSWORD') (method 2).
 # How to use it:
 As mentioned in 'How does it work' section password security is an important domain, so I decided to perform to methods. In the first method (I prefer), we can encrypt the login email address and password using Pran_Pyencrypt's Pyencrypter.py file. It will convert the PyMail.py file to PyMail.<system_variables>.pyd file which is kind of python .dll files which is not readable.
 In the second method, we can directly use PyMail.py file and set our login password while sending the mail by PyMail.send_mail('PASSWORD') but the password will be visible.
