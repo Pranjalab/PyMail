@@ -1,5 +1,5 @@
 # Pran_Pymail:
-This project helps you to send mail using Python with attachment.(Tested for G-mail Account)
+This project helps you to send mails using Python script with attachment.(Tested for G-mail Account)
 # Inspiration:
 Whenever I train a Deep Learning modal it takes more than 3-4 hours and I don't get to know when the training is Completed. So I  decided to make a project which can notify me of training competition by E-Mailing me with the results files.  
 # Dependency:
